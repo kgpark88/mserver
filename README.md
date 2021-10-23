@@ -1,4 +1,4 @@
-# Vision AI 서비스 
+# Vision AI 서비스 서버 
 
 ## 1. 파이썬 가상환경 생성 및 실행
 - python –m venv venv 
@@ -31,7 +31,7 @@ git clone https://github.com/kgpark88/mserver
 - pip install regex
 
 ## 4. 테이블 생성
-- cd server
+- cd mserver
 - python manage.py migrate
 - python manage.py makemigrations ocr
 - python manage.py migrate ocr
@@ -41,12 +41,3 @@ git clone https://github.com/kgpark88/mserver
 
 ## 6. 백엔드 서버 실행
 - python manage.py runserver
-
-## 7. 프론트엔드 소스 다운로드 
-- https://github.com/kgpark88/mclient
-
-## 8. NPM 패키지 설치 
-- npm run install
-
-## 9. 프론트엔드 실행
-- npm run serve
