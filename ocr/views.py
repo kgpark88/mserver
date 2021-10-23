@@ -44,20 +44,21 @@ def ocr(request):
 
             img = Image.open(upload_fname) 
             ocr_result = pytesseract.image_to_string(img, lang='kor+eng') 
-            print(f'[OCR Result]\n{ocr_result}')
-            ocr_result = ocr_result.strip()
-            ocr_result = ocr_result.replace(' ', '').replace('\n', '')
-            ocr_result = split_sentences(ocr_result)
-            spacing = Spacing()
-            for i, v in enumerate(ocr_result):
-                ocr_result[i] = spacing(v)
-            ocr_text = "\n".join(ocr_result)
+            print(f'[OCR TEXT]\n{ocr_result}')
+
+            # ocr_result = ocr_result.strip()
+            # ocr_result = ocr_result.replace(' ', '').replace('\n', '')
+            # ocr_result = split_sentences(ocr_result)
+            # spacing = Spacing()
+            # for i, v in enumerate(ocr_result):
+            #     ocr_result[i] = spacing(v)
+            # ocr_text = "\n".join(ocr_result)
+
         else:
             error_message = '업로드가 허용되지 않는 파일타입니다.'
     res = {
         'error_message': error_message, 
         'image_url': image_url,
-        'ocr_text': ocr_text, 
+        'ocr_text': ocr_result, 
     }
-    print(res)
     return JsonResponse(res)
