@@ -14,8 +14,6 @@
 - pip install pandas
 - pip install matplotlib
 - pip install scipy
-- pip install tensorflow
-- pip install tensorflow_hub
 - pip install django-import-export
 - pip install django-cors-headers
 - pip install djangorestframework
@@ -29,6 +27,8 @@
 - pip install git+https://github.com/haven-jeon/PyKoSpacing.git
 - pip install git+https://github.com/ssut/py-hanspell.git
 - pip install regex
+- pip install tensorflow
+- pip install tensorflow_hub
 
 ## 4. 테이블 생성
 - cd mserver
