@@ -7,7 +7,7 @@
 - Linux : source venv/bin/activate
 
 ## 2. 소스 다운로드
-git clone https://github.com/kgpark88/mserver
+- git clone https://github.com/kgpark88/mserver
 
 ## 3. 파이썬 패키지 설치
 - pip install django
