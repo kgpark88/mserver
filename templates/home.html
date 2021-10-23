@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <title>AIS</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+</head>
+
+<body>
+  <div id="app">
+    <v-app>
+      <v-main>
+        <section>
+          <v-parallax src="{% static 'images/discovery.jpg' %}" height="800">
+            <v-layout
+              column
+              align-center
+              justify-center
+              class="white--text"
+            >
+              <h1 id="titleText" class="red--text mb-2 display-3 font-weight-bold font-italic">문서인식 서비스</h1>
+              <v-btn class="blue lighten-2 mt-5" large  href="{% url 'admin:index' %}">데이터관리</v-btn>
+              <v-btn class="blue lighten-2 mt-5" large  href="{% url 'api' %}">서비스 API</v-btn>
+            </v-layout>
+          </v-parallax>
+        </section>
+      </v-main>
+    </v-app>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify(),
+    })
+  </script>
+</body>
+</html>
+
+
+
+
