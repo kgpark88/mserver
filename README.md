@@ -9,11 +9,11 @@
 ## 2. TesseractOCR 설치
 ■ Windows
 - 설치파일 다운로드 : https://github.com/UB-Mannheim/tesseract/wiki
-- 참조 : https://turtle-dennis.tistory.com/29
+- 참조 : https://turtle-dennis.tistory.com/29  
 ■ macOS
 - brew install tesseract
 - brew install tesseract-lang
-- 참조 : https://tariat.tistory.com/703
+- 참조 : https://tariat.tistory.com/703  
 ■ Linux
 - apt-get install tesseract-ocr
 - 참조 : https://linuxhint.com/install-tesseract-ocr-linux/
