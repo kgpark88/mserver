@@ -44,6 +44,7 @@ def ocr(request):
 
             img = Image.open(upload_fname) 
             ocr_result = pytesseract.image_to_string(img, lang='kor+eng') 
+            print(f'[OCR Result]\n{ocr_result}')
             ocr_result = ocr_result.strip()
             ocr_result = ocr_result.replace(' ', '').replace('\n', '')
             ocr_result = split_sentences(ocr_result)
