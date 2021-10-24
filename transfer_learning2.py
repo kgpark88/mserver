@@ -45,7 +45,12 @@ model.fit_generator(image_data, epochs=2)
 model.save(model_export_path, save_format='tf')
 
 class_names = sorted(image_data.class_indices.items(), key=lambda pair:pair[1])
+print(class_names)
+print(class_names)
+print(class_names)
 class_names = np.array([key.title() for key, value in class_names])
+print(class_names)
+print(class_names)
 
 model = tf.keras.models.load_model(model_export_path)
 predicted_batch = model.predict(image_batch)

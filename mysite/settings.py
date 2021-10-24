@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'crispy_forms',
 
     'mysite',
+    'classifier',
     'ocr',
 ]
 

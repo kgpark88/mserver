@@ -11,7 +11,6 @@ pip install django-crispy-forms
 pip install opencv-python
 pip install Pillow
 pip install pytesseract
-pip install kss
 pip install git+https://github.com/haven-jeon/PyKoSpacing.git
 pip install git+https://github.com/ssut/py-hanspell.git
 pip install regex

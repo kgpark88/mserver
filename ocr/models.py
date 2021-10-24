@@ -1,17 +1,17 @@
 from django.db import models
 
-class OcrHist(models.Model):
-    ocr_file = models.FileField('OCR 파일명')
-    ocr_text = models.TextField('OCR 텍스트', blank=True, null=True)
+class OcrText(models.Model):
+    file = models.FileField('이미지 파일')
+    text = models.TextField('텍스트 인식결과', blank=True, null=True)
     created = models.DateTimeField('생성일시', auto_now_add=True, blank=True, null=True)
     modified = models.DateTimeField('수정일시', auto_now=True, blank=True, null=True)
 
     class Meta:
         managed = True
-        db_table = 'ocr_hist'
+        db_table = 'ocr_text'
         ordering = ['-modified']
-        verbose_name = 'OCR 처리 내역'
-        verbose_name_plural = 'OCR 처리 내역'
+        verbose_name = '텍스트 인식'
+        verbose_name_plural = '텍스트 인식'
 
     def __str__(self):
         return "{} {}".format(self.org_file, self.owner)

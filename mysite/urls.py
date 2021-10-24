@@ -32,6 +32,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
+    path('classifier/', include(('classifier.urls', 'classifier'), namespace='classifier')),
     path('ocr/', include(('ocr.urls', 'ocr'), namespace='ocr')),
 
 ] 
