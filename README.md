@@ -1,10 +1,12 @@
 # Vision AI 서비스 서버 
 
 ## 1. 파이썬 가상환경 생성 및 실행
+### Windows
 - python –m venv venv 
-- Windows : venv\Scripts\activate.bat
-- MacOS : source venv/bin/activate
-- Linux : source venv/bin/activate
+- venv\Scripts\activate.bat
+### MacOS/Linux
+- python3 -m venv venv
+- source venv/bin/activate
 
 ## 2. TesseractOCR 설치
 ### Windows
