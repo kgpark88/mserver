@@ -1,4 +1,5 @@
 import os
+import platform
 from shutil import move
 from django.conf import settings
 from django.http import JsonResponse
@@ -13,11 +14,13 @@ except ImportError:
 
 from ocr.models import OcrText
 
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'
+media_root = getattr(settings, "MEDIA_ROOT", 'media')
 
-pytesseract.pytesseract.tesseract_cmd = r'/local/Cellar/tesseract/4.1.1/'
+pytesseract.pytesseract.tesseract_cmd = r'/local/Cellar/tesseract/4.1.1/bin/tesseract'
+os_name = platform.system()
+if os_name == "Windows":
+    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'
 
-media_root = getattr(settings, "MEDIA_ROOT", 'media')pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'
 @api_view(['POST'])
 def ocr(request):
     info = 'info'
