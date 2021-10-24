@@ -22,13 +22,13 @@ def ocr(request):
     title = ''
     text = ''
     error_message = ''
+    image_path = ''
     if request.FILES:
         file = request.FILES['file']
         print('File Name : {}'.format(file.name))
-        if file.name.lower().endswith(('.png', '.jpg', '.gif')):
+        if file.name.lower().endswith(('.png', '.jpg', 'jpeg', '.gif')):
             info = 'success'
             title = '텍스트 인식'
-            image_path = ''
             ocr_result = ''
             ocr_text = ''
 
