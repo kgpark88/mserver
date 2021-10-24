@@ -51,9 +51,8 @@
 
 ## 5. 테이블 생성
 - cd mserver
-- python manage.py migrate
 - python manage.py makemigrations ocr
-- python manage.py migrate ocr
+- python manage.py migrate 
 
 ## 6. 데이터베이스 관리자 계정 생성
 - python manage.py createsuperuser
