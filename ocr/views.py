@@ -16,7 +16,7 @@ from ocr.models import OcrText
 
 media_root = getattr(settings, "MEDIA_ROOT", 'media')
 
-pytesseract.pytesseract.tesseract_cmd = r'/local/Cellar/tesseract/4.1.1/bin/tesseract'
+pytesseract.pytesseract.tesseract_cmd = r'/usr/local/Cellar/tesseract/4.1.1/bin/tesseract'
 os_name = platform.system()
 if os_name == "Windows":
     pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'
