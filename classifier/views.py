@@ -28,7 +28,7 @@ def classification(request):
     if request.FILES:
         file = request.FILES['file']
         print('File Name : {}'.format(file.name))
-        if file.name.lower().endswith(('.png', '.jpg', '.gif')):
+        if file.name.lower().endswith(('.png', '.jpg', 'jpeg', '.gif')):
             info = 'success'
             title = '이미지 분류'
             image_url = ''
