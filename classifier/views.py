@@ -23,6 +23,7 @@ def classification(request):
     title = ''
     text = ''
     error_message = ''
+    image_path = ''
     predicted_label = ''
     if request.FILES:
         file = request.FILES['file']
