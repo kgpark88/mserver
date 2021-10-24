@@ -19,9 +19,11 @@
 ### Linux
 - apt-get install tesseract-ocr
 - 참조 : https://linuxhint.com/install-tesseract-ocr-linux/
+
 ### kor.traineddata 파일 다운로드 
-- 다운로드 : https://github.com/tesseract-ocr/tessdata
-- kor.traineddata 파일을 C:\Program Files\Tesseract-OCR\tessdata\에 복사
+- 다운로드 : https://github.com/tesseract-ocr/tessdata/kor.traineddata 다운로드
+- Windows : C:\Program Files\Tesseract-OCR\tessdata\ 디렉토리에 복사
+- MacOS/Linux : /usr/local/Cellar/tesseract/4.1.1/share/tessdata/ 디렉토리에 
 
 ## 3. 서버프로그램 소스 다운로드
 - git clone https://github.com/kgpark88/mserver
