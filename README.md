@@ -25,10 +25,10 @@
 - git clone https://github.com/kgpark88/mserver
 
 ## 4. 파이썬 패키지 설치
-- pip install django
 - pip install pandas
 - pip install matplotlib
 - pip install scipy
+- pip install django
 - pip install django-import-export
 - pip install django-cors-headers
 - pip install djangorestframework
@@ -38,10 +38,8 @@
 - pip install opencv-python
 - pip install Pillow
 - pip install pytesseract
-- pip install kss
 - pip install git+https://github.com/haven-jeon/PyKoSpacing.git
 - pip install git+https://github.com/ssut/py-hanspell.git
-- pip install regex
 - pip install tensorflow
 - pip install tensorflow_hub
 

@@ -13,7 +13,7 @@ from tensorflow.keras import layers
 
 media_root = getattr(settings, "MEDIA_ROOT", 'media')
 
-model_path = "/tmp/saved_models/flower_classifier"
+model_path = "saved_models/flower_classifier"
 model = tf.keras.models.load_model(model_path)
 class_names = ['Daisy', 'Dandelion', 'Roses', 'Sunflowers', 'Tulips']
 
