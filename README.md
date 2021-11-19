@@ -62,3 +62,14 @@
 
 ## 8. 백엔드 웹서비스 접속
 - http://localhost:8000
+
+## 실행화면
+![image](https://user-images.githubusercontent.com/17672596/142606611-9a9249d1-816f-45c2-98ef-f99826d3b2ad.png)
+
+![image](https://user-images.githubusercontent.com/17672596/142606630-c1f561ed-2de1-4ce9-bc2b-90472e786459.png)
+
+![image](https://user-images.githubusercontent.com/17672596/142606643-1def09c4-03d6-46b0-a921-9e7a4ba38b7d.png)
+
+
+
+
